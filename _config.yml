@@ -6,16 +6,14 @@
 name: Monkey Patch
 
 # Short bio or description (displayed in the header)
-description: Primitive primate codes
+description: Primitive Primate Artifices
 #
 # Flags below are optional
-#
 
 # Includes an icon in the footer for each username you enter
 footer-links:
   github: ddaza
-  linkedin: ddaza
-  rss: # just type anything here for a working RSS icon
+  rss: monkey # just type anything here for a working RSS icon
   twitter: dpdaza
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
@@ -26,7 +24,7 @@ disqus:
 google_analytics:
 
 # Used for Sitemap.xml and your RSS feed
-  url: http://www.monkeypatch.xyz
+  url: https://www.monkeypatch.xyz
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
