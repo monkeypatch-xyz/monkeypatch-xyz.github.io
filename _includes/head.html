@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }} – {{ site.description }}</title>
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="author" content="{{ site.author }}">
+<!--[if lt IE 8]>
+<script src="http://html4shiv.googlecode.com/svn/trunk/html4.js"></script>
+<![endif]-->
+<!-- fonts and config -->
+<link rel="stylesheet" type="text/css" href="/css/main.css" />
+<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+<!-- fonts and config END -->
+<!-- rss -->
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+<!-- rss END -->
+{% if page.title %}
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:publisher" content="https://www.facebook.com/toddmotto">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="{{site.social.twitter | prepend: '@'}}">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+{% endif %}

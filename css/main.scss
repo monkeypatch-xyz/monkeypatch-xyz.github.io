@@ -1,0 +1,35 @@
+---
+# Only file to be included
+---
+// Colors
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #eee;
+$white: #fff;
+$blue: #4183C4;
+
+// Main theme colors
+
+// Heading colors
+// You can play around with these too!
+// $h1-color: $mono-color;
+// $h2-color: $mono-color;
+// $h3-color: $darkerGray;
+// $h4-color: $gray;
+
+// Your avatar
+$avatar: "/images/avatar.jpg";
+
+// Fonts
+$font-family: "Libre Franklin", sans-serif;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+@import "normalize", "syntax-highlighting";

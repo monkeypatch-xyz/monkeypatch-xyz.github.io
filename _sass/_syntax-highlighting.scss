@@ -1,22 +1,42 @@
 /**
- * Monokai Highlight
- * Syntax highlighting styles
- * Based on: https://github.com/richleland/pygments-css/blob/master/monokai.css
- */
-.highlight, .highlight > pre, .highlight > pre > code, .code > pre {
+* Monokai Highlight
+* Syntax highlighting styles
+* Based on: https://github.com/richleland/pygments-css/blob/master/monokai.css
+*/
+pre code {
+  padding: 30px;
+  display: block;
+  overflow-y: scroll;
+  @media screen and (max-width: 850px) {
+    padding: 40px;
+  }
+}
 
-   pre, code {
+.highlight {
+  padding: 0;
+  margin: 0;
+}
+
+.highlight, .highlight > pre, .highlight > pre > code, .code > pre {
+  white-space: pre;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0;
+
+  pre, code {
+    font-size: 14px;
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
     border: none;
-   }
+  }
 
   .lineno {
-   background-color: #49483e;
-   color: #fff;
-   @extend %vertical-rhythm;
+    background-color: #49483e;
+    color: #fff;
   }
 
   background-color: #49483e;
-  @extend %vertical-rhythm;
 
   .highlighter-rouge & {
     background-color: #49483e;
