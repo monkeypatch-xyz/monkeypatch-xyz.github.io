@@ -10,4 +10,4 @@ This website was heavily influenced by the following people and products:
 * [Font-Awesome](http://fontawesome.io).
 
 ## License
-* [MIT] (https://github.com/monkeypatch-xyz/monkeypatch-xyz.github.io/blob/master/LICENCE)
+* [MIT](https://github.com/monkeypatch-xyz/monkeypatch-xyz.github.io/blob/master/LICENCE)
