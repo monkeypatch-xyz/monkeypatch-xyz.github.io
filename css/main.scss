@@ -2,22 +2,17 @@
 # Only file to be included
 ---
 // Colors
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+$black: #000 !default;
+$white: #fff !default;
 $blue: #4183C4;
 
 // Main theme colors
-
-// Heading colors
-// You can play around with these too!
-// $h1-color: $mono-color;
-// $h2-color: $mono-color;
-// $h3-color: $darkerGray;
-// $h4-color: $gray;
+/* Coolors Palette - coolors.co/565264-706677-a6808c-ccb7ae-d6cfcb */
+$davysGrey: #565264 !default;
+$oldLavender: #706677 !default;
+$mountBattenPink: #A6808C !default;
+$silverPink: #CCB7AE !default;
+$pasterGray: #D6CFCB !default;
 
 // Your avatar
 $avatar: "/images/avatar.jpg";
