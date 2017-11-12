@@ -1,0 +1,60 @@
+// Based on the grid example on -- https://codepen.io/dgca/pen/QExbKN
+
+.grid-container {
+  @media (min-width: $screen-xs) {
+    max-width: $screen-xs;
+  }
+
+  @media (min-width: $screen-sm) {
+    max-width: $screen-sm;
+  }
+
+  @media (min-width: $screen-md) {
+    max-width: $screen-md;
+  }
+
+  @media (min-width: $screen-lg) {
+    max-width: $screen-lg;
+  }
+}
+
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+@for $i from 1 through 12 {
+  .grid-col-xs-#{$i},
+  .grid-col-sm-#{$i},
+  .grid-col-md-#{$i},
+  .grid-col-lg-#{$i} {
+    box-sizing: border-box;
+    padding: 1em;
+    width: 100%;
+  }
+
+  .grid-col-xs-#{$i} {
+    @media (min-width: $screen-xs) {
+      width: calc(100% * (#{$i} / 12));
+    }
+  }
+
+  .grid-col-sm-#{$i} {
+    @media (min-width: $screen-sm) {
+      width: calc(100% * (#{$i} / 12));
+    }
+  }
+
+  .grid-col-md-#{$i} {
+    @media (min-width: $screen-md) {
+      width: calc(100% * (#{$i} / 12));
+    }
+  }
+
+  .grid-col-lg-#{$i} {
+    @media (min-width: $screen-lg) {
+      width: calc(100% * (#{$i} / 12));
+    }
+  }
+}

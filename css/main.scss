@@ -1,5 +1,5 @@
 ---
-# Only file to be included
+# Only this file need the front matter
 ---
 // Colors
 $black: #000 !default;
@@ -14,18 +14,23 @@ $mountBattenPink: #A6808C !default;
 $silverPink: #CCB7AE !default;
 $pasterGray: #D6CFCB !default;
 
-// Your avatar
-$avatar: "/images/avatar.jpg";
+// Screen sizes
+$screen-xs: 540px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
 
 // Fonts
 $font-family: "Libre Franklin", sans-serif;
 $syntax-font: "Inconsolata", monospace;
 
-// Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
+:root {
+  font-family: $font-family;
+  font-size: 16px;
 }
 
-@import "normalize", "syntax-highlighting";
+@import "normalize",
+        "reset",
+        "grid",
+        "base",
+        "syntax-highlighting";
