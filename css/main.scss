@@ -1,5 +1,5 @@
 ---
-# Only this file need the front matter
+  # root of the style files
 ---
 // Colors
 $black: #000 !default;
@@ -30,7 +30,6 @@ $syntax-font: "Inconsolata", monospace;
 }
 
 @import "normalize",
-        "reset",
         "grid",
         "base",
         "syntax-highlighting";

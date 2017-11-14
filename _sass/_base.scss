@@ -1,8 +1,49 @@
+.header {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+
+  .header-container {
+    align-items: stretch;
+    display: flex;
+    margin: 1em auto;
+  }
+
+  .logo {
+    flex: 1;
+
+    .logo-image {
+      // background: url('/images/MonkeyLogo.png') no-repeat;
+      height: 2em;
+    }
+  }
+
+  .nav {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+
+    .nav-link {
+      margin-left: 1em;
+    }
+  }
+}
+
 .main {
   margin: 1em auto;
+  overflow: hidden;
   text-align: center;
 }
 
-.header {
-  background: red;
+body {
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  position: relative;
 }
