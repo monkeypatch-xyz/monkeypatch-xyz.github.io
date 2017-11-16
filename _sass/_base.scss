@@ -2,7 +2,6 @@
   margin: 1em auto;
   min-height: 80%;
   overflow: hidden;
-
 }
 
 .link {
@@ -27,6 +26,11 @@ html {
   height: 100%;
 }
 
+body,
+html {
+  background: lighten($pastelGray, 10%);
+}
+
 *,
 *::before,
 *::after {
@@ -36,4 +40,6 @@ html {
 
 @import 'header',
         'footer',
+        'page',
+        'blog',
         'welcome';
