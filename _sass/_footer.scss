@@ -1,0 +1,28 @@
+.footer {
+  color: $davysGrey;
+  margin: 0 auto 2em;
+  text-align: center;
+
+  .footer-legend {
+    margin: 1em auto;
+  }
+
+  .footer-separator {
+    background: $davysGrey;
+    border: 0;
+    height: 1px;
+    margin: 1em auto;
+    width: 50%;
+  }
+
+  .footer-link {
+    color: $davysGrey;
+    font-size: 13px;
+    margin: 0 .5em;
+
+    &:visited,
+    &:active {
+      color: $davysGrey;
+    }
+  }
+}

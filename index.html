@@ -1,18 +1,45 @@
 ---
 layout: default
+custom-class: welcome-page
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
+<div class="welcome-banner">
+  <div class="container grid-container">
+    <div class="banner-mascot">
+      <img class="monkey" src="/images/MonkeyMascot.png" alt="MonkeyPatch Mascot"/>
+    </div>
+    <div  class="banner-legend">
+      <div class="legend">
+        <dl>
+          <dt><h3>Monkey Patch</h3></dt>
+          <dd><i>n.</i> &nbsp;A patch which alters the behaviour of a program by forcefully overriding aspects of the original code at runtime.
+          </dd>
+          <dd><i>v.</i> &nbsp;To alter the behaviour of a program by forcefully overriding aspects of the original code at runtime.
+          </dd>
+        </dl>
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="button button-primary">Read More</a>
-    </article>
-  {% endfor %}
+    </div>
+  </div>
 </div>
+<div class="welcome-pitch">
+  <div class="container grid-container">
+    <div class="pitch-legend">
+      <div class="legend">
+        MonkeyPatch is the act of <b>"patching"</b> a program and overiding its behaviour.
+        <br />
+        While centainly that is not ideal I stand by the philosophy of constant change and deeply believe in the iterative process.
+        <br />
+         <u><a target="_blank" class="link" href="https://en.wikipedia.org/wiki/Kaizen">Small incremental changes</a></u> can become huge overtime.
+        <br />
+        If any of my posts or code that you found here has changed the way you think about anything feel free to to reach out and let me know about it.
+        <br />
+        Enjoy!
+      </div>
+    </div>
+    <div class="pitch-diagram">
+      <img class="loop" src="/images/loop.png" alt="software testing diagram" />
+    </div>
+  </div>
+</div>
+
+

@@ -1,25 +1,27 @@
-<footer class="footer">
-  <div class="svg-icon">
-    {% if site.social.email %}
-    <a href="mailto:{{ site.social.email }}"><i class="fa fa-envelope fa-2x"></i></a>
-    {% endif %}
-    {% if site.social.github %}
-    <a href="https://github.com/{{ site.social.github }}"><i class="fa fa-github fa-2x"></i></a>
-    {% endif %}
-    {% if site.social.linkedin %}
-    <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}"><i class="fa fa-linkedin-square fa-2x"></i></a>
-    {% endif %}
-    {% if site.social.rss %}
-    <a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss-square fa-2x"></i></a>
-    {% endif %}
-    {% if site.social.twitter %}
-    <a href="https://www.twitter.com/{{ site.social.twitter }}"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-    {% endif %}
-    {% if site.social.stackoverflow %}
-    <a href="http://stackoverflow.com/{{ site.social.stackoverflow }}"><i class="fa fa-stack-exchange fa-2x"></i></a>
-    {% endif %}
-    {% if site.social.youtube %}
-    <a href="https://youtube.com/{{ site.social.youtube }}"><i class="fa fa-youtube-play fa-2x"></i></a>
-    {% endif %}
-  </div>
-</footer>
+<hr class="footer-separator"/>
+<div class="footer-legend">
+  Made with &nbsp;<i class="fa fa-heart"></i>&nbsp; from the silicon prairie.
+</div>
+<div class="footer-icons">
+  {% if site.social.email %}
+  <a class="footer-link" href="mailto:{{ site.social.email }}"><i class="fa fa-envelope fa-2x"></i></a>
+  {% endif %}
+  {% if site.social.github %}
+  <a class="footer-link" href="https://github.com/{{ site.social.github }}"><i class="fa fa-github fa-2x"></i></a>
+  {% endif %}
+  {% if site.social.linkedin %}
+  <a class="footer-link" href="https://www.linkedin.com/in/{{ site.social.linkedin }}"><i class="fa fa-linkedin-square fa-2x"></i></a>
+  {% endif %}
+  {% if site.social.twitter %}
+  <a class="footer-link" href="https://www.twitter.com/{{ site.social.twitter }}"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+  {% endif %}
+  {% if site.social.stackoverflow %}
+  <a class="footer-link" href="https://stackoverflow.com/{{ site.social.stackoverflow }}"><i class="fa fa-stack-exchange fa-2x"></i></a>
+  {% endif %}
+  {% if site.social.youtube %}
+  <a class="footer-link" href="https://youtube.com/{{ site.social.youtube }}"><i class="fa fa-youtube-play fa-2x"></i></a>
+  {% endif %}
+  {% if site.social.rss %}
+  <a class="footer-link" href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss-square fa-2x"></i></a>
+  {% endif %}
+</div>

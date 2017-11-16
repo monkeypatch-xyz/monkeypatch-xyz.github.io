@@ -1,0 +1,100 @@
+
+$gradient-start: rgba(0, 0, 0, .5);
+$gradient-end: rgba(0, 0, 0, .7);
+
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+
+  .welcome-pitch,
+  .welcome-banner {
+    flex: 1;
+    font-size: 1.3em;
+    min-height: 800px;
+
+    @media(max-width: $screen-md) {
+      font-size: 1em;
+    }
+  }
+
+  .welcome-banner {
+    background: url('/images/banner_16-9.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+
+    &::before {
+      background-image: linear-gradient(to bottom, $gradient-start, $gradient-end);
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .pitch-diagram,
+  .pitch-legend,
+  .banner-mascot,
+  .banner-legend {
+    align-self: stretch;
+    display: flex;
+    height: 100%;
+  }
+
+  .legend {
+    line-height: 1.5em;
+    margin: auto;
+  }
+
+  .banner-mascot {
+    flex: 2;
+  }
+
+  .pitch-diagram,
+  .pitch-legend,
+  .banner-legend {
+    flex: 1;
+  }
+
+
+  .banner-legend {
+    color: $white;
+  }
+
+  .welcome-pitch {
+    display: flex;
+    text-align: center;
+  }
+
+  .container {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 2em auto;
+    min-height: 100%;
+  }
+
+  .loop,
+  .monkey,
+  .legend {
+    @media(max-width: $screen-md) {
+      padding: 0 2em;
+    }
+  }
+
+  .loop,
+  .monkey {
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
