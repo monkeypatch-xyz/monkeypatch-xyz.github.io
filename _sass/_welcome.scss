@@ -84,7 +84,7 @@ $gradient-end: rgba(0, 0, 0, .7);
   .monkey,
   .legend {
     @media(max-width: $screen-md) {
-      padding: 0 2em;
+      margin: 2em;
     }
   }
 

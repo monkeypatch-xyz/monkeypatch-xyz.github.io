@@ -1,0 +1,6 @@
+exclude: '_site/**'
+
+linters:
+  NameFormat:
+    #enable: false
+    convention: camel_case #hyphenated_lowercase or 'camel_case', or 'snake_case', or a regex pattern

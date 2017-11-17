@@ -1,10 +1,13 @@
 
 .blog {
+  @media(max-width: $screen-md) {
+    margin: 2em;
+  }
 
   .blog-container {
     display: flex;
     flex-direction: column;
-    margin: 2em auto;
+    margin: 0 auto;
   }
 
   .post {
@@ -16,14 +19,14 @@
   }
 
   .post-description {
-    line-height: 1.5em;
     color: $black;
+    line-height: 1.5em;
   }
 
   .post-read {
     color: $davysGrey;
-    text-decoration: underline $oldLavender;
     font-weight: bold;
+    text-decoration: underline $oldLavender;
   }
 
 }
