@@ -10,21 +10,47 @@
     margin: 2em 0;
   }
 
-  .logo {
+  .logo-reactive {
+    display: none;
     flex: 1 auto;
-    min-height: 1.3em;
+    min-height: 1em;
 
-    .logo-image {
-      bottom: 0;
-      display: block;
-      left: 0;
-      max-height: 100%;
-      max-width: 100%;
-      object-fit: contain;
+    &::after {
+      content: "\f0c9";
+      font-family: FontAwesome;
+      font-size: 1.3em;
+      padding: 0 1em;
       position: absolute;
       right: 0;
-      top: 0;
+      text-decoration: none;
+      top: -.3em;
+      margin: 0;
+      line-height: 1.3em;
+
     }
+  }
+
+  .header-check {
+    height: 0;
+    position: fixed;
+    width: 0;
+    top: 0;
+  }
+
+  .logo {
+    flex: 1 auto;
+  }
+
+  .logo-image {
+    bottom: 0;
+    display: block;
+    left: 0;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   .nav-container {
@@ -36,43 +62,74 @@
   .nav-link {
     color: $black;
     margin: auto 0 auto 1em;
+
+    &.reactive {
+      display: none;
+    }
   }
 
   @media(max-width: $screen-md) {
+
+    .header-check:checked {
+      ~ .nav-container {
+        display: block;
+      }
+
+      ~ .logo-reactive::after {
+        color: $white;
+        content: '\f00d';
+        z-index: 101;
+        position: fixed;
+        top: 1em;
+      }
+    }
+
+    .logo {
+      display: none;
+    }
+
+    .logo-reactive {
+      display: block;
+    }
 
     .logo-image {
       margin: auto;
     }
 
     .nav-container {
-      display: none;
-      flex-direction: column;
-      flex: 1 auto;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      bottom: 0;
       background: $davysGrey;
+      bottom: 0;
+      display: none;
+      flex: 1 auto;
+      flex-direction: column;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
       z-index: 100;
+      overflow: hidden;
     }
 
     .nav {
       display: flex;
       flex-direction: column;
+      justify-items: center;
+      left: 0;
       position: absolute;
       top: 0;
-      left: 0;
       width: 100%;
-      justify-items: center;
     }
 
     .nav-link {
+      border-bottom: 1px solid $white;
       color: $white;
       font-size: 1.5 em;
       margin: 2em auto;
-      tex-align: center;
-      border-bottom: 1px solid $white;
+      text-align: center;
+
+      &.reactive {
+        display: block;
+      }
     }
   }
 }

@@ -2,11 +2,17 @@
 layout: default
 custom-class: blog
 permalink: /blog
-title: Blog ( ...and random thoughts)
+title: Blog
+# subtitle: ( ...and random thoughts)
 ---
 
 <div class="blog-container grid-container">
-  <h1>{{ page.title }}</h1>
+  {% if page.subtitle %}
+    <h1>{{ page.title }}</h1>
+    <div> {{page.subtitle}} </div>
+  {% else%}
+    <h1>{{ page.title }}</h1>
+  {% endif %}
   {% for post in site.posts %}
   <article class="post">
     <h2><a class="post-title link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
