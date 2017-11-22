@@ -4,31 +4,29 @@
 * Based on: https://github.com/richleland/pygments-css/blob/master/monokai.css
 */
 pre code {
-  padding: 30px;
   display: block;
-  overflow-y: scroll;
-  @media screen and (max-width: 850px) {
-    padding: 40px;
-  }
+  overflow: auto;
+  padding: 2em;
 }
 
 .highlight {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .highlight, .highlight > pre, .highlight > pre > code, .code > pre {
-  white-space: pre;
+  background-color: #49483e;
   border-radius: 5px;
   font-size: 16px;
   line-height: 18px;
   margin: 0;
+  white-space: pre;
 
   pre, code {
-    font-size: 14px;
-    font-family: $syntax-font;
+    border: 0;
     color: #fff;
-    border: none;
+    font-family: $syntax-font;
+    font-size: 14px;
   }
 
   .lineno {
@@ -36,25 +34,27 @@ pre code {
     color: #fff;
   }
 
-  background-color: #49483e;
-
   .highlighter-rouge & {
     background-color: #49483e;
   }
 
+  $oldCommentColor: #8a8a8a;
+  $commentColor: #b7b7b7;
+
+
   .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
-  .c { color: #8a8a8a } /* Comment */
-  .c1 { color: #8a8a8a } /* Comment.Single */
-  .cm { color: #8a8a8a } /* Comment.Multiline */
-  .cp { color: #8a8a8a } /* Comment.Preproc */
-  .cs { color: #8a8a8a } /* Comment.Special */
+  .c { color: $commentColor } /* Comment */
+  .c1 { color: $commentColor } /* Comment.Single */
+  .cm { color: $commentColor } /* Comment.Multiline */
+  .cp { color: $commentColor } /* Comment.Preproc */
+  .cs { color: $commentColor } /* Comment.Special */
   .err { color: #960050; background-color: #1e0010 } /* Error */
   .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
   .ge { font-style: italic } /* Generic.Emph */
   .gh { } /* Generic Heading & Diff Header */
   .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
   .gs { font-weight: bold } /* Generic.Strong */
-  .gu { color: #8a8a8a; } /* Generic.Subheading & Diff Unified/Comment? */
+  .gu { color: $commentColor; } /* Generic.Subheading & Diff Unified/Comment? */
   .il { color: #ae81ff } /* Literal.Number.Integer.Long */
   .k { color: #66d9ef } /* Keyword */
   .kc { color: #66d9ef } /* Keyword.Constant */

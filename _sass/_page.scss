@@ -3,7 +3,39 @@
   flex-direction: column;
   margin: 0 auto;
 
+
   @media(max-width: $screen-md) {
     margin: 2em;
+  }
+
+  .with-subtitle {
+    margin: .67em 0;
+
+    h1 {
+      margin: 0;
+    }
+
+    i {
+      font-size: 1em;
+      padding-left: 1em;
+    }
+  }
+
+  li {
+    margin: .5em 0;
+  }
+
+  a {
+    color: $davysGrey;
+    text-decoration: none;
+
+    &:visited,
+    &:active {
+      color: $davysGrey;
+    }
+
+    &:hover {
+      text-decoration: underline $davysGrey;
+    }
   }
 }

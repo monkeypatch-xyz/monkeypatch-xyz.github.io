@@ -4,7 +4,14 @@ custom-class: page
 ---
 
 <div class="page grid-container">
-  <h1>{{ page.title }}</h1>
+  {% if page.subtitle %}
+  <div class="with-subtitle">
+    <h1>{{ page.title }}</h1>
+    <i> {{ page.subtitle }} </i>
+  </div>
+  {% else%}
+    <h1>{{ page.title }}</h1>
+  {% endif %}
   <div class="page-entry">
     {{ content }}
   </div>

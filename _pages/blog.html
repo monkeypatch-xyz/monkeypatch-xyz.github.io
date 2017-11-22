@@ -15,7 +15,8 @@ title: Blog
   {% endif %}
   {% for post in site.posts %}
   <article class="post">
-    <h2><a class="post-title link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <h2 class="post-title"> {{ post.title }}</h2>
+    <i>{{ post.date | date: "%a, %b %d, %Y" }}</i>
     <div class="post-description">
       {{ post.excerpt }}
     </div>
@@ -23,3 +24,4 @@ title: Blog
   </article>
   {% endfor %}
 </div>
+
