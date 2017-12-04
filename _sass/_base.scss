@@ -5,6 +5,17 @@
   overflow: hidden;
 }
 
+.toc {
+  background: $pastelGray;
+  border-color: $davysGrey;
+  border-radius: 10px;
+  padding: 1.5em;
+
+  .toc-title {
+    text-decoration: underline;
+  }
+}
+
 .link {
   text-decoration: none;
 
@@ -30,6 +41,12 @@ html {
 body,
 html {
   background: lighten($pastelGray, 10%);
+}
+
+hr {
+  background: $davysGrey;
+  border: 0;
+  height: 1px;
 }
 
 *,
