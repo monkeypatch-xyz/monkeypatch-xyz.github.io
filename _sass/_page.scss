@@ -1,11 +1,17 @@
 .page {
   display: flex;
   flex-direction: column;
+  line-height: 1.5em;
   margin: 0 auto;
 
 
   @media(max-width: $screen-md) {
     margin: 2em;
+  }
+
+  .title-info {
+    display: flex;
+    justify-content: space-between;
   }
 
   .with-subtitle {
@@ -26,16 +32,31 @@
   }
 
   a {
-    color: $davysGrey;
+    color: $spanishViolet;
     text-decoration: none;
 
     &:visited,
     &:active {
-      color: $davysGrey;
+      color: $spanishViolet;
     }
 
     &:hover {
-      text-decoration: underline $davysGrey;
+      text-decoration: underline $spanishViolet;
     }
+  }
+
+  blockquote {
+    background: $mountBattenPink;
+    color: $white;
+    margin: 0;
+    padding: 1em 2em;
+  }
+
+  code {
+    background: $pastelGray;
+    border: 1px solid $davysGrey;
+    border-radius: 5px;
+    color: $red;
+    padding: 0 .3em;
   }
 }
