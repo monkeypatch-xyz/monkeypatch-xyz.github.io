@@ -2,21 +2,14 @@
 layout: default
 custom-class: page
 ---
-
 <div class="page grid-container">
   {% if page.subtitle %}
   <div class="with-subtitle">
     <h1>{{ page.title }}</h1>
     <i> {{ page.subtitle }} </i>
   </div>
-  {% else%}
+  {% else %}
     <h1>{{ page.title }}</h1>
   {% endif %}
-  <div class="title-info">
-    <i>{{ page.date | date: "%a, %b %d, %Y" }}</i>
-    <a href="https://github.com/monkeypatch-xyz/monkeypatch-xyz.github.io/tree/master/_posts"><i class="fa fa-link"></i>&nbsp;Edit this page</a>
-  </div>
-  <div class="page-entry">
-    {{ content }}
-  </div>
+  {{ content }}
 </div>

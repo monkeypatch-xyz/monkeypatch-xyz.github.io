@@ -16,9 +16,9 @@ pre code {
 
 .highlight, .highlight > pre, .highlight > pre > code, .code > pre {
   background-color: #49483e;
-  border-radius: 5px;
-  font-size: 16px;
-  line-height: 18px;
+  border-radius: 10px;
+  font-size: 1em;
+  line-height: 1.5em;
   margin: 0;
   white-space: pre;
 
@@ -26,7 +26,6 @@ pre code {
     border: 0;
     color: #fff;
     font-family: $syntax-font;
-    font-size: 14px;
   }
 
   .lineno {
