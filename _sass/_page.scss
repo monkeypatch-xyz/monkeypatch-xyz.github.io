@@ -52,7 +52,11 @@
     padding: 1em 2em;
   }
 
-  code {
+  .permalink {
+    margin: 0 10px;
+  }
+
+  code.highlighter-rouge {
     background: $pastelGray;
     border: 1px solid $davysGrey;
     border-radius: 5px;

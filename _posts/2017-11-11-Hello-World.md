@@ -8,7 +8,9 @@ Glad you could stop by. This is just getting started!
 ## Welcome! 
 -----
 
-This is my first post! Wait for more to come.
+This is my first post! 
+
+`Wait for more to come`
 
 ```javascript
   function welcome() {
